@@ -1,0 +1,68 @@
+/* Importando iconos fontello ss */
+
+@import url("../css/css/fontello.css");
+
+/*Botones de editar y elimina registro*/
+
+.contenedor-btn_editar{
+
+  text-align: center;
+  width: 5%;
+
+}
+
+.contenedor-btn_eliminar{
+
+  text-align: center;
+  width: 5%;
+  color: white;
+
+}
+
+.btn_editar{
+
+  color:white;
+  text-decoration: none;
+  background-color: #63B480;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;*/
+  color: white;
+  transition: 0.5s;
+  border-radius: 100%;
+
+}
+
+.btn_editar:hover{
+
+  color: white;
+  background-color: #3B945B;
+  text-decoration: none;
+  transition: 0.5s;
+
+}
+
+.btn_eliminar{
+
+  text-decoration: none;
+  background-color: #DD4F4F;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  transition: 0.5s;
+  border-radius: 100%;
+  cursor: pointer;
+
+}
+
+.btn_eliminar:hover{
+
+  color: white;
+  background-color: #A74B4B;
+  text-decoration: none;
+  transition: 0.5s;
+
+}
+

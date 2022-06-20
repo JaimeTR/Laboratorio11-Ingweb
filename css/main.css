@@ -1,0 +1,229 @@
+/* Menú */
+
+*{
+
+	box-sizing: border-box;
+
+}
+
+body{
+
+	margin: 0;
+
+}
+
+.nav-bar{
+
+	background: #E38646;
+	padding: 20px;
+	display: block;
+	color: white;
+	cursor: pointer;
+	font-size: 1em;
+	width: 100%;
+
+}
+
+.menu, .submenu{
+
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+}
+
+.menu{
+
+	background: #333;
+	width: 100%;
+	margin-left: -100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	transition: all 0.3s ease-in-out;
+
+
+}
+
+.menu__link{
+
+	display: block;
+	padding: 20px;
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.3s;
+
+}
+
+.submenu{
+
+	height: 0;
+	overflow: hidden;
+	transition: all 0.3s;
+
+}
+
+.submenu .menu__link{
+
+	background: #333;
+	padding-left: 25px;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.3s;
+
+}
+
+@media(min-width: 1024px){
+
+	.nav-bar{
+
+		display: none;
+
+	}
+
+	.menu{
+
+		margin-left: 0;
+		display: flex;
+
+	}
+
+	.container-submenu{
+
+		position: relative;
+
+	}
+
+	.submenu{
+
+		position: absolute;
+		top: 69.5px;
+		width: 250px;
+		overflow: visible;
+		z-index: 1000;
+		opacity: 0;
+		visibility: hidden;
+
+	}
+
+	.container-submenu:hover .submenu {
+
+		opacity: 1;
+		visibility: visible;
+
+	}
+
+}
+
+/*Imágenes*/
+
+.container-imagen{
+
+	text-align: center;
+	padding: 20px;
+
+
+}
+
+.container-imagen img{
+
+	text-align: center;
+
+}
+
+/*Formulario*/
+
+.contenedor_formulario{
+
+	text-align: center;
+	margin-top: 15px;
+	width: 100%;
+
+}
+
+.contenedor_formulario input{
+
+	padding: 10px;
+	width: 25%;
+	margin-top: 15px;
+
+}
+
+.btnNuevo{
+
+	background-color: green;
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: all 0.4s;
+
+}
+
+.btnNuevo:hover{
+
+	background-color: #434343;
+	transition: all 0.4s;
+
+}
+
+.select{
+
+	padding: 10px;
+	margin-top: 15px;
+	width: 25%;
+
+}
+
+
+@media(min-width: 468px){
+
+	.contenedor_formulario input{
+
+		width: 70%;
+
+	}
+
+	.select{
+
+		width: 70%;
+
+	}
+
+}
+
+@media(min-width: 768px){
+
+	.contenedor_formulario input{
+
+		width: 50%;
+
+	}
+
+	.select{
+
+		width: 50%;
+
+	}
+
+}
+
+
+@media(min-width: 1200px){
+
+	.contenedor_formulario input{
+
+		width: 30%;
+
+	}
+
+	.select{
+
+		width: 30%;
+
+	}
+
+}
