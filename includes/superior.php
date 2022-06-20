@@ -50,8 +50,8 @@
 					</li>
 				</ul>
 			</li>
-			<li class="menu__item container-submenu"><a href="../vista/web/index.html" class="menu__link">INFORMACION</a></li>
-			<li class="menu__item"><a href="" class="menu__link">Cerrar sesión de usuario</a></li>
+			<li class="menu__item container-submenu"><a href="../vista/web/index.html" class="menu__link">PAGINA WEB INFORMATIVA</a></li>
+			<li class="menu__item"><a href="login.php" class="menu__link">CERRAR SECCIÓN</a></li>
 		</ul>
 	</nav>
 	<br>
