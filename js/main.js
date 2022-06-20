@@ -1,22 +1,32 @@
-$(document).ready(function(){
-    tablaPersonas = $("#tablaPersonas").DataTable({
-       "columnDefs":[{
-        "targets": -1}],
-        
-    "language": {
-            "lengthMenu": "Mostrar _MENU_ registros",
-            "zeroRecords": "No se encontraron resultados",
-            "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-            "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-            "infoFiltered": "(filtrado de un total de _MAX_ registros)",
-            "sSearch": "Buscar:",
-            "oPaginate": {
-                "sFirst": "Primero",
-                "sLast":"Último",
-                "sNext":"Siguiente",
-                "sPrevious": "Anterior"
-             },
-             "sProcessing":"Procesando...",
-        }
-    });
+$(document).ready(function () {
+
+	$('#js-main-slider').pogoSlider({
+		autoplay: true,
+		autoplayTimeout: 5000,
+		displayProgess: true,
+		preserveTargetSize: true,
+		targetWidth: 1000,
+		targetHeight: 300,
+		responsive: true
+	}).data('plugin_pogoSlider');
+
+	var transitionDemoOpts = {
+		displayProgess: false,
+		generateNav: false,
+		generateButtons: false
+	}
+
+	$('#demo1').pogoSlider(transitionDemoOpts);
+	$('#demo2').pogoSlider(transitionDemoOpts);
+	$('#demo3').pogoSlider(transitionDemoOpts);
+	$('#demo4').pogoSlider(transitionDemoOpts);
+	$('#demo5').pogoSlider(transitionDemoOpts);
+	$('#demo6').pogoSlider(transitionDemoOpts);
+	$('#demo7').pogoSlider(transitionDemoOpts);
+	$('#demo8').pogoSlider(transitionDemoOpts);
+	$('#demo9').pogoSlider(transitionDemoOpts);
+	$('#demo10').pogoSlider(transitionDemoOpts);
+	$('#demo11').pogoSlider(transitionDemoOpts);
+	$('#demo12').pogoSlider(transitionDemoOpts);
+
 });
